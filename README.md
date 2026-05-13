@@ -1,6 +1,6 @@
-**Title: Retail-Sales-Inventory-Analytics**
+## Title: Retail-Sales-Inventory-Analytics
 
-**Project Description: Omnichannel Retail Sales and Inventory Analytics**
+## Project Description: Omnichannel Retail Sales and Inventory Analytics
 
 **Executive Problem Statement**
 
@@ -29,46 +29,18 @@ The project utilizes a professional-grade technology stack to ensure scalability
 
 
 
-**Getting Started**
-
-**Project Roadmap & Sprint Progress**
-
-This project was developed over a strict four-week engineering sprint as part of the Infotact Technical Internship Program:
-
-**Week 1: Data Collection & Infrastructure –** Initiated GitHub repository, established environment, and performed initial data cleaning (handling NULLs, duplicates, and standardizing formats).
-**Week 2: Relational Database Design –** Migrated cleaned data to a SQL database. Developed complex queries for metric extraction, including revenue aggregations and geographic distribution.
-**Week 3: Dashboard Architecture –** Connected Power BI/Tableau to the SQL database. Created interactive visualizations, heatmaps, and dynamic filters for drill-down analysis.
-**Week 4: Insights & Reporting –** Analyzed visualizations to extract strategic findings and finalized documentation.
 
 
-**Installation and Setup**
 
-To replicate this analytics pipeline, follow the steps below:
+## Contribution Guidelines
 
-**1. Prerequisites**
-Ensure you have the following tools installed:
+To maintain a clean and readable project history, all team members **must** use the following semantic prefixes for every commit message. This standard allows us to quickly identify the nature of any change.
 
-**Python 3.x** (with Pandas library)
-**SQL Database** (MySQL or PostgreSQL)
-**Business Intelligence Tool** (Power BI Desktop or Tableau)
-**Git** for version control
+| Prefix | Description | Use Case Example |
+| :--- | :--- | :--- |
+| **data-clean:** | for all data cleaning tasks. | `data-clean: treat missing null values in sales table` |
+| **eda:** | for exploratory data analysis work. | `eda: generate correlation matrix for inventory` |
+| **model:** | for calculations, logic, or script development. | `model: implement FIFO logic for stock valuation` |
+| **docs:** | for updates to documentation or README. | `docs: establish semantic standards in README.md` |
 
-**2. Environment Setup**
-Clone the repository and set up your local environment:
-git clone [your-repository-link]
-cd omnichannel-retail-analytics
-3. Data Cleaning (Python/Pandas)
-Navigate to the notebooks/ directory and run the cleaning script to process raw CSV logs:
-Standardizes date/time formats.
-Validates data types.
-Handles missing values via mean/median imputation where applicable.1
-4. Database Configuration (SQL)
-Import the cleaned dataset into your SQL environment. Execute the scripts in the sql/ folder to build the necessary aggregations:
-schema_setup.sql: Defines table structures.
-analytical_queries.sql: Contains the logic for KPI calculations like YoY growth and peak purchasing periods.1
-5. Dashboard Connection
-Open Power BI or Tableau.
-Connect to your local SQL database.
-Load the pre-configured .pbix or .twb file from the dashboards/ directory to view the interactive visualizations.1
-Mandatory Protocol Note: Per project requirements, this repository maintains a granular commit history (3-5 commits per day) to reflect the iterative development lifecycle.
-
+**Important:** Commits that do not follow this convention will be flagged for revision.
