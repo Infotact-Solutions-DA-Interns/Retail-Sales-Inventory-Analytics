@@ -12,3 +12,17 @@ venv/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+
+The Mandatory .gitignore Update code 
+
+### --- DATA PRIVACY & SECURITY RULES --- ###
+# Step 3 Compliance: Mandatory rules to ensure massive raw 
+# datasets are never accidentally pushed to the repository.
+
+# Ignore all CSV files
+*.csv
+
+# Ignore all Excel workbooks
+*.xlsx
+### --------------------------------------- ###
