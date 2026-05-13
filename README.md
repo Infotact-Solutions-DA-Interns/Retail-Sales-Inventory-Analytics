@@ -44,3 +44,14 @@ To maintain a clean and readable project history, all team members **must** use 
 | **docs:** | for updates to documentation or README. | `docs: establish semantic standards in README.md` |
 
 **Important:** Commits that do not follow this convention will be flagged for revision.
+
+
+
+### Commit Frequency & Evaluation
+
+To ensure continuous integration and satisfy project evaluation criteria, all team members **must** adhere to the following frequency requirements:
+
+*   **Daily Minimum:** Maintain a minimum of **3 to 5 meaningful commits** per active development day.
+*   **Massive Upload Policy:** A single massive upload containing multiple days or weeks of work at the end of the month is *prohibited*.
+
+**Evaluation Warning:** Failure to maintain consistent, daily contributions will result in **immediate disqualification** from the project. Commits are audited daily.
