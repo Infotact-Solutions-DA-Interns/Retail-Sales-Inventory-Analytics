@@ -1,4 +1,4 @@
-Title -Omnichannel Sales & Inventory Analytic
+Title -Omnichannel Sales & Inventory Analytics
 
 Project Overview
 
