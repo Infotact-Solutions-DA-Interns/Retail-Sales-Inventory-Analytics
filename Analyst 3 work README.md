@@ -1,4 +1,4 @@
-Title -Omnichannel Sales Analytics - Olist E-Commerce Project
+Title -Omnichannel Sales & Inventory Analytic
 
 Project Overview
 
