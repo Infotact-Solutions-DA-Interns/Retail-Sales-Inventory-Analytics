@@ -26,3 +26,11 @@ The Mandatory .gitignore Update code
 # Ignore all Excel workbooks
 *.xlsx
 ### --------------------------------------- ###
+
+# Ignore raw data files and compressed folders
+*.csv
+*.zip
+
+# Ignore Python environment folders
+venv/
+.ipynb_checkpoints/
