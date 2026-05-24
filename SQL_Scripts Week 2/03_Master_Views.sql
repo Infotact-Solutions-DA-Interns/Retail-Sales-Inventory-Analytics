@@ -78,3 +78,15 @@ SELECT
     ROW_NUMBER() OVER(PARTITION BY customer_state ORDER BY total_revenue DESC) as city_rank
 FROM CityRevenueCTE;
 GO
+
+-- 7. CATEGORY REVENUE VIEW (Absorbed from 04_dashboard_views)
+CREATE OR ALTER VIEW vw_category_revenue AS
+SELECT 
+    p.product_category_name,
+    COUNT(DISTINCT op.order_id) as total_orders,
+    SUM(op.payment_value) AS total_revenue
+FROM order_payments op
+JOIN order_items oi ON op.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+GROUP BY p.product_category_name;
+GO
