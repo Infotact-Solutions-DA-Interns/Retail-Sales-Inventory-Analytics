@@ -1,36 +1,19 @@
-# Python / Environments
+# === Python & Environments ===
 __pycache__/
 *.py[cod]
 venv/
 .env
 
-# Data / Analytics
-*.csv
-*.xlsx
-*.pbix
+# === Jupyter Notebook Cache ===
+**/.ipynb_checkpoints/
 
-# OS generated files
+# === OS Generated Files ===
 .DS_Store
 Thumbs.db
 
-
-The Mandatory .gitignore Update code 
-
 ### --- DATA PRIVACY & SECURITY RULES --- ###
-# Step 3 Compliance: Mandatory rules to ensure massive raw 
-# datasets are never accidentally pushed to the repository.
-
-# Ignore all CSV files
+# Mandatory rules to ensure massive raw datasets 
+# are never accidentally pushed to the repository.
 *.csv
-
-# Ignore all Excel workbooks
 *.xlsx
-### --------------------------------------- ###
-
-# Ignore raw data files and compressed folders
-*.csv
 *.zip
-
-# Ignore Python environment folders
-venv/
-.ipynb_checkpoints/
