@@ -22,7 +22,7 @@ The project utilizes a professional-grade technology stack to ensure scalability
 
 **Data Preparation:** Leveraging Microsoft Excel for initial exploration and Python (Pandas) for automated, large-scale cleaning and manipulation.
 
-**Database Management:** Utilizing SQL (MySQL or PostgreSQL) for efficient data aggregation and complex metric extraction using advanced joins and window functions.
+**Database Management:** Utilizing SQL (MySQL or SSMS) for efficient data aggregation and complex metric extraction using advanced joins and window functions.
 
 **Visualization:** Developing interactive dashboards in Power BI or Tableau featuring time-series trends, product performance bar charts, and peak-hour heatmaps.
 
