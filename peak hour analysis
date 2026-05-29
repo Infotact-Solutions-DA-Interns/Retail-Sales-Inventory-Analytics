@@ -1,0 +1,64 @@
+```python
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Generate sample data
+np.random.seed(42)
+
+date_range = pd.date_range(
+    start='2026-01-01',
+    end='2026-01-31',
+    freq='15min'
+)
+
+df = pd.DataFrame({
+    'timestamp': date_range,
+    'count': np.random.poisson(20, len(date_range))
+})
+
+# Add peak hour effects
+df['hour'] = df['timestamp'].dt.hour
+
+df.loc[df['hour'].between(8, 10), 'count'] += 40
+df.loc[df['hour'].between(17, 20), 'count'] += 50
+
+# Extract features
+df['day'] = df['timestamp'].dt.day_name()
+df['hour'] = df['timestamp'].dt.hour
+
+# Day order
+day_order = [
+    'Monday', 'Tuesday', 'Wednesday',
+    'Thursday', 'Friday', 'Saturday', 'Sunday'
+]
+
+# Create pivot table
+heatmap_data = df.pivot_table(
+    values='count',
+    index='day',
+    columns='hour',
+    aggfunc='sum'
+)
+
+heatmap_data = heatmap_data.reindex(day_order)
+
+# Plot heatmap
+plt.figure(figsize=(16, 6))
+
+sns.heatmap(
+    heatmap_data,
+    cmap='YlOrRd',
+    linewidths=0.5,
+    annot=True,
+    fmt='.0f'
+)
+
+plt.title('Peak Hour Analysis Heatmap')
+plt.xlabel('Hour of Day')
+plt.ylabel('Day of Week')
+
+plt.tight_layout()
+plt.show()
+```
