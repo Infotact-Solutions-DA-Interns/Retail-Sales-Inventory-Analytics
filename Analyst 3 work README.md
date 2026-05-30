@@ -81,3 +81,20 @@ The Week 1 foundation includes:
 - Preparing the dataset for further analysis
 
 This foundation work ensures that future analysis is accurate, meaningful, and based on properly understood data.
+
+Week 2 Exploration Focus
+With the data cleaned in Week 1, the second week focuses on exploring it to find basic patterns and trends. Before diving into complex reports, you need to see what the data is actually telling you.
+
+The Week 2 exploration includes:
+
+Getting basic summaries: Finding the averages, totals, and ranges of your data.
+
+Making simple charts: Creating basic graphs to see how individual data points are spread out.
+
+Finding connections: Looking at how different pieces of data relate to each other (e.g., does one go up when another goes down?).
+
+Spotting oddities: Identifying unusual data points (outliers) that don't fit the normal pattern.
+
+Highlighting early trends: Writing down the first big takeaways to guide the rest of your project.
+
+This step helps you see the "big picture" so you know exactly what questions to answer in the next phase.
