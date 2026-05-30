@@ -87,14 +87,9 @@ With the data cleaned in Week 1, the second week focuses on exploring it to find
 
 The Week 2 exploration includes:
 
-Getting basic summaries: Finding the averages, totals, and ranges of your data.
+- Getting basic summaries: Finding the averages, totals, and ranges of your data.
+- Making simple charts: Creating basic graphs to see how individual data points are spread out.
+- Finding connections: Looking at how different pieces of data relate to each other (e.g., does one go up when another goes down?).
+- Spotting oddities: Identifying unusual data points (outliers) that don't fit the normal pattern.
+- Highlighting early trends: Writing down the first big takeaways to guide the rest of your project.
 
-Making simple charts: Creating basic graphs to see how individual data points are spread out.
-
-Finding connections: Looking at how different pieces of data relate to each other (e.g., does one go up when another goes down?).
-
-Spotting oddities: Identifying unusual data points (outliers) that don't fit the normal pattern.
-
-Highlighting early trends: Writing down the first big takeaways to guide the rest of your project.
-
-This step helps you see the "big picture" so you know exactly what questions to answer in the next phase.
