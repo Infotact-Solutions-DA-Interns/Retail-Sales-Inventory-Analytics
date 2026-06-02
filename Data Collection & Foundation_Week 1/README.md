@@ -43,48 +43,33 @@ RETAIL-SALES-INVENTORY-ANALYTICS-DASHBOARD/
     ├── 03_Master_Views.sql
     └── README_Team_Instructions.md
 
-    📅 Project Timeline & Task Distribution
+📅 Project Timeline & Task Distribution
 Week 1: Foundation & Database Setup
-Acquired Olist Brazilian E-Commerce dataset.
-
-Configured local SQL Server environment.
-
-Performed bulk import of raw flat files into the relational database structure.
-
-Analyzed underlying schema and table interactions.
+      - Acquired Olist Brazilian E-Commerce dataset.
+      - Configured local SQL Server environment.
+      - Performed bulk import of raw flat files into the relational database structure.
+      - Analyzed underlying schema and table interactions.
 
 Week 2: Version Control & Data Profiling
-Ran initial SQL queries to validate data and identify translation/duplication inconsistencies.
+      - Ran initial SQL queries to validate data and identify translation/duplication inconsistencies.
+      - Established project version control using Git and GitHub.
+      - Defined branching strategy (e.g., dev-data-cleaning) and set up collaborative repository for the team.
 
-Established project version control using Git and GitHub.
-
-Defined branching strategy (e.g., dev-data-cleaning) and set up collaborative repository for the team.
-
-Week 3: Power BI Data Modeling & Master Visuals (Lead Analyst Focus)
-Resolved critical memory and duplicate blank row errors in the translation table via SSMS and Power Query.
-
-Established clean One-to-Many relationships and semantic models in Power BI.
-
-Built core DAX measures: Total Revenue, Total Orders, and Average Order Value (AOV).
-
-Designed the Page 1 Executive Overview with a grouped, layered Master Filter Panel (synced across all pages).
-
-Delegated specific visual builds to team members (Kasak, Ahmad, Swetha).
+Week 3: Power BI Data Modeling & Master Visuals
+     - Resolved critical memory and duplicate blank row errors in the translation table via SSMS and Power Query.
+     - Established clean One-to-Many relationships and semantic models in Power BI.
+     - Built core DAX measures: Total Revenue, Total Orders, and Average Order Value (AOV).
+     - Designed the Page 1 Executive Overview with a grouped, layered Master Filter Panel (synced across all pages).
+     - Delegated specific visual builds to team members (Kasak, Ahmad, Swetha).
 
 Week 4: Final Assembly & Insights (Upcoming)
-Integrate delegated charts (Time-series, Category Bar, Geospatial Heatmap) into the master layout.
-
-Implement advanced UX features like a master show/hide slicer panel using bookmarks.
-
-Insight generation and final executive documentation.
-
-Project submission and stakeholder presentation.
+     - Integrate delegated charts (Time-series, Category Bar, Geospatial Heatmap) into the master layout.
+     - Implement advanced UX features like a master show/hide slicer panel using bookmarks.
+     - Insight generation and final executive documentation.
+     - Project submission and stakeholder presentation.
 
 📈 Expected Insights
-Temporal Trends: 12-month revenue trajectory and seasonality.
-
-Category Performance: Identification of top-selling English product categories.
-
-Geospatial Concentration: Heatmap of regional sales density across Brazilian states.
-
-Executive KPIs: Global visibility into overall Revenue, Volume, and AOV.
+     - Temporal Trends: 12-month revenue trajectory and seasonality.
+     - Category Performance: Identification of top-selling English product categories.
+     - Geospatial Concentration: Heatmap of regional sales density across Brazilian states.
+     - Executive KPIs: Global visibility into overall Revenue, Volume, and AOV.
