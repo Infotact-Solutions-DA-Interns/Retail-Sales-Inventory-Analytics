@@ -1,0 +1,110 @@
+```DAX
+-- Total Revenue Measure
+Total Revenue =
+SUM(Sales[Revenue])
+```
+
+```DAX
+-- Last 12 Months Filter Table (Optional)
+Last12Months =
+DATESINPERIOD(
+    'Date'[Date],
+    MAX('Date'[Date]),
+    -12,
+    MONTH
+)
+```
+
+```DAX
+-- 12-Month Revenue Measure
+Total Revenue (12M) =
+CALCULATE(
+    [Total Revenue],
+    DATESINPERIOD(
+        'Date'[Date],
+        MAX('Date'[Date]),
+        -12,
+        MONTH
+    )
+)
+```
+
+## Build the Line Chart in Microsoft Power BI
+
+1. Insert a **Line chart** visual.
+2. Drag `'Date'[Month Year]` to the **X-Axis**.
+3. Drag `[Total Revenue (12M)]` to **Values**.
+4. Sort the chart by `'Date'[Date]` ascending.
+5. In Filters:
+
+   * Select the Date field.
+   * Apply **Relative Date Filtering**:
+
+     * *is in the last 12 months*
+6. Format:
+
+   * X-axis → **Continuous**
+   * Turn on **Data labels**
+   * Add chart title:
+
+     * `12-Month Revenue Trend`
+
+## Suggested GitHub Repository Structure
+
+```text
+powerbi-12m-revenue-chart/
+│
+├── README.md
+├── measures/
+│   └── revenue_measures.dax
+├── screenshots/
+│   └── line-chart.png
+└── report/
+    └── RevenueDashboard.pbix
+```
+
+## Example README.md
+
+````md
+# 12-Month Revenue Trend Dashboard
+
+This Power BI report visualizes Total Revenue over the last 12 months using a time-series line chart.
+
+## Features
+- Dynamic 12-month rolling window
+- DAX revenue measures
+- Relative date filtering
+- Continuous time-series visualization
+
+## Tools
+- Power BI
+- DAX
+
+## Measure Used
+
+```DAX
+Total Revenue =
+SUM(Sales[Revenue])
+````
+
+````
+
+## GitHub Upload Steps
+
+1. Create a new repository on :contentReference[oaicite:1]{index=1}.
+2. Upload:
+   - `.pbix` file
+   - DAX scripts
+   - screenshots
+   - README.md
+3. Commit changes with message:
+
+```bash
+git commit -m "Added 12-month revenue time-series line chart"
+````
+
+4. Push repository:
+
+```bash
+git push origin main
+```
